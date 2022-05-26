@@ -1,9 +1,9 @@
-import type { Request, Response, NextFunction } from 'express'
 import type { IncomingHttpHeaders } from 'http2'
-import type { osuUser } from '../interface/osuUser'
 
 import { URLSearchParams } from 'url'
+import type { NextFunction, Request, Response } from 'express'
 import axios from 'axios'
+import type { osuUser } from '../interface/osuUser'
 
 function getHeaders(req: IncomingHttpHeaders) {
   return {
@@ -37,7 +37,7 @@ async function getUserToken(code: string, state: string) {
       'Content-Type': 'application/x-www-form-urlencoded',
     },
   }
-  const token: string = await axios
+  const token = await axios
     .post('https://osu.ppy.sh/oauth/token', params, { headers: config.headers })
     .then(res => res.data)
     .catch((error) => { return error.response.data })
@@ -89,7 +89,7 @@ async function getUser(header: IncomingHttpHeaders) {
   if (user.authentication === 'basic')
     return undefined
 
-  return { user: minimalUser(user) }
+  return minimalUser(user)
 }
 
 async function checkAccount(req: Request, res: Response, next: NextFunction) {

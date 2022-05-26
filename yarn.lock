@@ -2716,6 +2716,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"class-validator@npm:^0.13.2":
+  version: 0.13.2
+  resolution: "class-validator@npm:0.13.2"
+  dependencies:
+    libphonenumber-js: "npm:^1.9.43"
+    validator: "npm:^13.7.0"
+  checksum: 3b3c45bb9c84be5a621c23ecc1db70a844554d348b0d64229487e46b362fb945b885e60b65c2016f3f782f7e609c75919cb058ba3b264fb7ee8b30e654fa938f
+  languageName: node
+  linkType: hard
+
 "clean-regexp@npm:^1.0.0":
   version: 1.0.0
   resolution: "clean-regexp@npm:1.0.0"
@@ -5859,6 +5869,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"libphonenumber-js@npm:^1.9.43":
+  version: 1.10.6
+  resolution: "libphonenumber-js@npm:1.10.6"
+  checksum: 5c1fef500f7c5fac82727dd293d8dc72c0d24e9d89dfc3114ebdb805cf8e1c4170dfe9cc61d5a7ff4876c36bac91787fe1c3dd7b395a6077c6cbecf461df8fb3
+  languageName: node
+  linkType: hard
+
 "lines-and-columns@npm:^1.1.6":
   version: 1.2.4
   resolution: "lines-and-columns@npm:1.2.4"
@@ -6681,6 +6698,7 @@ __metadata:
     "@types/uuid": "npm:^8.3.4"
     apollo-server-express: "npm:^3.8.1"
     axios: "npm:^0.27.2"
+    class-validator: "npm:^0.13.2"
     compression: "npm:^1.7.4"
     dotenv: "npm:^16.0.1"
     dotenv-cli: "npm:^5.1.0"
@@ -8327,6 +8345,13 @@ __metadata:
     spdx-correct: "npm:^3.0.0"
     spdx-expression-parse: "npm:^3.0.0"
   checksum: 6d62b39e947077e554dfdf6a760fb52e8db73e7724aeeab1a1f4aa742e75b2ca5092b9f7b1b9171778e96f592628932ee07784a2c86f4152411180a32a8824be
+  languageName: node
+  linkType: hard
+
+"validator@npm:^13.7.0":
+  version: 13.7.0
+  resolution: "validator@npm:13.7.0"
+  checksum: 1c42a259d072334c89dbd94ae026901a8a85dc7389f24a00650a38827ab44ee563370b896b4cc318697587e7aa93d230fdfa527d78c187b08f9816af23025a74
   languageName: node
   linkType: hard
 

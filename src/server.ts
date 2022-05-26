@@ -7,12 +7,12 @@ import app from './app'
 
 import { osuResolver } from './resolvers/osu.resolver'
 
-(async() => {
+(async () => {
   const apolloServer = new ApolloServer({
     schema: await buildSchema({
-      resolvers: [osuResolver]
+      resolvers: [osuResolver],
     }),
-    context: ({ req, res }) => ({ req, res })
+    context: ({ req, res }) => ({ req, res }),
   })
 
   await apolloServer.start()
