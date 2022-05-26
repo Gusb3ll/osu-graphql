@@ -1,0 +1,8 @@
+{
+  "prettier.enable": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "css.lint.unknownAtRules": "ignore",
+  "vue3snippets.enable-compile-vue-file-on-did-save-code": false
+}
