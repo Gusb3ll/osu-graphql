@@ -1509,7 +1509,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/glob@npm:^7.1.3":
+"@types/glob@npm:*, @types/glob@npm:^7.1.3":
   version: 7.2.0
   resolution: "@types/glob@npm:7.2.0"
   dependencies:
@@ -1525,6 +1525,15 @@ __metadata:
   dependencies:
     "@types/node": "npm:*"
   checksum: 2785f1a962029597d01799bf96b400b4bedcf5295f379e0c08f2d1faa656fece563ecb655e85d379a61efdd4c99e5da16cce9f591c5a311f3354d86a27dab498
+  languageName: node
+  linkType: hard
+
+"@types/graphql@npm:^14.5.0":
+  version: 14.5.0
+  resolution: "@types/graphql@npm:14.5.0"
+  dependencies:
+    graphql: "npm:*"
+  checksum: ff11079b048bea1271801b586e39ad7b9d7336f8b6dcbe6cea38851df6f757761af3933834ff3b3b49ab5668a0356e902c91d60a79b99f738daa1977af85a117
   languageName: node
   linkType: hard
 
@@ -1696,6 +1705,16 @@ __metadata:
   dependencies:
     "@types/node": "npm:*"
   checksum: f6e2bc61d2fbeabfd6c5df826e87832aa89f7b190dc993503ff1bbc19608ba75223f4c41c22bfb9500b66e36bf00e7a2c2c0af9e6abba6c2e5bad808eb324d2c
+  languageName: node
+  linkType: hard
+
+"@types/rimraf@npm:^3":
+  version: 3.0.2
+  resolution: "@types/rimraf@npm:3.0.2"
+  dependencies:
+    "@types/glob": "npm:*"
+    "@types/node": "npm:*"
+  checksum: 2c9fdc69d30a25921a390a0e0cc9f1d576158ec5cced569e580ee48c1bdd099f8c067dacd649534a8f7daa5fb772efaa7fd9299799cd5891c01ecc31441e332d
   languageName: node
   linkType: hard
 
@@ -4467,6 +4486,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"graphql@npm:*":
+  version: 16.5.0
+  resolution: "graphql@npm:16.5.0"
+  checksum: 6fca73c872bb4e5ffe9417f4e4bb53baa5c8a5f1fc9ac190e7eb211f55d6b505088e4efb5b10ffce75421ada42b49a49dacf82be6cc39128bee8f1b6cba434b3
+  languageName: node
+  linkType: hard
+
+"graphql@npm:^15.3.0":
+  version: 15.8.0
+  resolution: "graphql@npm:15.8.0"
+  checksum: e09073b981965b99d22717ed219c55086375075db0870a5a934e1d777d645a155f10141dfe1d0d9713b35765790fb257d6d198d75a53e02ba0126f16befc899c
+  languageName: node
+  linkType: hard
+
 "hard-rejection@npm:^2.1.0":
   version: 2.1.0
   resolution: "hard-rejection@npm:2.1.0"
@@ -6639,10 +6672,12 @@ __metadata:
     "@types/compression": "npm:^1.7.2"
     "@types/express": "npm:^4.17.13"
     "@types/express-rate-limit": "npm:^6.0.0"
+    "@types/graphql": "npm:^14.5.0"
     "@types/helmet": "npm:^4.0.0"
     "@types/jest": "npm:^27.5.1"
     "@types/jsonwebtoken": "npm:^8.5.8"
     "@types/node": "npm:^17.0.35"
+    "@types/rimraf": "npm:^3"
     "@types/uuid": "npm:^8.3.4"
     apollo-server-express: "npm:^3.8.1"
     axios: "npm:^0.27.2"
@@ -6652,11 +6687,14 @@ __metadata:
     eslint: "npm:^8.16.0"
     express: "npm:^4.18.1"
     express-rate-limit: "npm:^6.4.0"
+    graphql: "npm:^15.3.0"
     helmet: "npm:^5.1.0"
     husky: "npm:^8.0.1"
     jest: "npm:^28.1.0"
     jsonwebtoken: "npm:^8.5.1"
     nodemon: "npm:^2.0.16"
+    reflect-metadata: "npm:^0.1.13"
+    rimraf: "npm:^3.0.2"
     ts-node: "npm:^10.8.0"
     type-graphql: "npm:^1.1.1"
     typescript: "npm:^4.7.2"
@@ -7150,6 +7188,13 @@ __metadata:
     indent-string: "npm:^4.0.0"
     strip-indent: "npm:^3.0.0"
   checksum: bbc590863463cb58ee2cba8434cedfc7a7ba3187e90f38d81d7b4332d08a3a0188f3786c3b15f5f5d6b729c1e2304c85b5cfdf7f07dd00797719845a548fe770
+  languageName: node
+  linkType: hard
+
+"reflect-metadata@npm:^0.1.13":
+  version: 0.1.13
+  resolution: "reflect-metadata@npm:0.1.13"
+  checksum: 61ce7c28a941bb75972972dfb8196e1d62e7c80a30111e1e0454ecb1a506fbee5dcb58c18c212b9f784b96686eb5b5b1baf7eb768e0d627c11c213e65f3af412
   languageName: node
   linkType: hard
 

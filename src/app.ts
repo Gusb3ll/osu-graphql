@@ -2,8 +2,11 @@ import type { Application, Request, Response } from 'express'
 
 import cors from 'cors'
 import helmet from 'helmet'
+import dotenv from 'dotenv'
 import express from 'express'
 import compression from 'compression'
+
+dotenv.config()
 
 const app: Application = express()
 

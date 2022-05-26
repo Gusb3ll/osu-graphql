@@ -19,7 +19,7 @@ import { osuResolver } from './resolvers/osu.resolver'
 
   apolloServer.applyMiddleware({ app })
 
-  app.listen(parseInt(process.env.PORT!) || 3333, '0.0.0.0', () => {
+  app.listen(parseInt(process.env.PORT) || 3333, '0.0.0.0', () => {
     console.log(`Server started on port ${process.env.PORT || 3333}`)
   })
-})
+})()
