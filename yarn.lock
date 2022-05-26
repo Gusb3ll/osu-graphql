@@ -4496,17 +4496,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql@npm:*":
+"graphql@npm:*, graphql@npm:16.5.0":
   version: 16.5.0
   resolution: "graphql@npm:16.5.0"
   checksum: 6fca73c872bb4e5ffe9417f4e4bb53baa5c8a5f1fc9ac190e7eb211f55d6b505088e4efb5b10ffce75421ada42b49a49dacf82be6cc39128bee8f1b6cba434b3
-  languageName: node
-  linkType: hard
-
-"graphql@npm:15.8.0":
-  version: 15.8.0
-  resolution: "graphql@npm:15.8.0"
-  checksum: e09073b981965b99d22717ed219c55086375075db0870a5a934e1d777d645a155f10141dfe1d0d9713b35765790fb257d6d198d75a53e02ba0126f16befc899c
   languageName: node
   linkType: hard
 
@@ -6705,7 +6698,7 @@ __metadata:
     eslint: "npm:8.16.0"
     express: "npm:4.18.1"
     express-rate-limit: "npm:6.4.0"
-    graphql: "npm:15.8.0"
+    graphql: "npm:16.5.0"
     helmet: "npm:5.1.0"
     husky: "npm:8.0.1"
     jest: "npm:28.1.0"
