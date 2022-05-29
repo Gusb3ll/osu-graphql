@@ -15,11 +15,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@antfu/eslint-config-basic@npm:0.24.2":
-  version: 0.24.2
-  resolution: "@antfu/eslint-config-basic@npm:0.24.2"
+"@antfu/eslint-config-basic@npm:0.24.3":
+  version: 0.24.3
+  resolution: "@antfu/eslint-config-basic@npm:0.24.3"
   dependencies:
-    eslint-plugin-antfu: "npm:0.24.2"
+    eslint-plugin-antfu: "npm:0.24.3"
     eslint-plugin-eslint-comments: "npm:^3.2.0"
     eslint-plugin-html: "npm:^6.2.0"
     eslint-plugin-import: "npm:^2.26.0"
@@ -33,54 +33,54 @@ __metadata:
     yaml-eslint-parser: "npm:^1.0.1"
   peerDependencies:
     eslint: ">=7.4.0"
-  checksum: e2772602fe7540c92db7c40bb9bce77686104b3f6f43ebbfed39e0171555d949bee18ba620be00fa9f992bf72a629ef964d9cd7904fe9f3f437b0a33ce94152e
+  checksum: fa5ac9941c4aaf0f396ba384454e93ac2b8ed48e1069df82da4b466be5f871ea41de7a3e4d2ab93237cd3ffef847f3127c9e237e0409b9b9b76c18bfe6b9334c
   languageName: node
   linkType: hard
 
-"@antfu/eslint-config-react@npm:0.24.2":
-  version: 0.24.2
-  resolution: "@antfu/eslint-config-react@npm:0.24.2"
+"@antfu/eslint-config-react@npm:0.24.3":
+  version: 0.24.3
+  resolution: "@antfu/eslint-config-react@npm:0.24.3"
   dependencies:
-    "@antfu/eslint-config-ts": "npm:0.24.2"
+    "@antfu/eslint-config-ts": "npm:0.24.3"
     eslint-plugin-react: "npm:^7.30.0"
   peerDependencies:
     eslint: ">=7.4.0"
-  checksum: 1985ac9fc2c98df952cad730087d9bebbc45db4e026b2ff9aab6172944d5e740429b1646809f403bba96ce67ed230bbf6a9797842703882181c089a630b25922
+  checksum: 6127238cc42a92f71c20591b406f8f1d8df3b9ff6425654d25129f458acf1119d1b9b2ff9e2b22f96f1235cf08b88accd86ebbbbbf13976860457596095d2b38
   languageName: node
   linkType: hard
 
-"@antfu/eslint-config-ts@npm:0.24.2":
-  version: 0.24.2
-  resolution: "@antfu/eslint-config-ts@npm:0.24.2"
+"@antfu/eslint-config-ts@npm:0.24.3":
+  version: 0.24.3
+  resolution: "@antfu/eslint-config-ts@npm:0.24.3"
   dependencies:
-    "@antfu/eslint-config-basic": "npm:0.24.2"
+    "@antfu/eslint-config-basic": "npm:0.24.3"
     "@typescript-eslint/eslint-plugin": "npm:^5.26.0"
     "@typescript-eslint/parser": "npm:^5.26.0"
   peerDependencies:
     eslint: ">=7.4.0"
     typescript: ">=3.9"
-  checksum: 8d45f225c69677cee5fea53f24517ecc1696f21f7244fc5d38c1d9a80fb9732d8618e08548ada95bcf50e21a296e598554bbfa9a7da7478dea74bb4a00fad65e
+  checksum: a0d91c00f150ddd7b1aee02434f6d0a19988d86e21f95a0daa3c3a9677755657282bd231042e8b23546097999230f13c0ef2a5a44a3121fbff3948ef07dac16a
   languageName: node
   linkType: hard
 
-"@antfu/eslint-config-vue@npm:0.24.2":
-  version: 0.24.2
-  resolution: "@antfu/eslint-config-vue@npm:0.24.2"
+"@antfu/eslint-config-vue@npm:0.24.3":
+  version: 0.24.3
+  resolution: "@antfu/eslint-config-vue@npm:0.24.3"
   dependencies:
-    "@antfu/eslint-config-ts": "npm:0.24.2"
+    "@antfu/eslint-config-ts": "npm:0.24.3"
     eslint-plugin-vue: "npm:^9.0.1"
   peerDependencies:
     eslint: ">=7.4.0"
-  checksum: 1f66c79708a040f71622a5946c515086a5b8f08161d954c0c9bfc4544ff1fcd9d54ea4e311c803242e888f607e9b037dfebba833cf458f2cbed82eb494e7b8f8
+  checksum: afd4fc42d3ea99a72a111edf2e6e43a956a4e6e6e698817ad2a185dff95617634489d687faaa409d0dc3fbbc28eeadab1a5f7e97b2da51ca497ab97f5e4abc93
   languageName: node
   linkType: hard
 
-"@antfu/eslint-config@npm:0.24.2":
-  version: 0.24.2
-  resolution: "@antfu/eslint-config@npm:0.24.2"
+"@antfu/eslint-config@npm:0.24.3":
+  version: 0.24.3
+  resolution: "@antfu/eslint-config@npm:0.24.3"
   dependencies:
-    "@antfu/eslint-config-react": "npm:0.24.2"
-    "@antfu/eslint-config-vue": "npm:0.24.2"
+    "@antfu/eslint-config-react": "npm:0.24.3"
+    "@antfu/eslint-config-vue": "npm:0.24.3"
     "@typescript-eslint/eslint-plugin": "npm:^5.26.0"
     "@typescript-eslint/parser": "npm:^5.26.0"
     eslint-plugin-eslint-comments: "npm:^3.2.0"
@@ -96,7 +96,7 @@ __metadata:
     yaml-eslint-parser: "npm:^1.0.1"
   peerDependencies:
     eslint: ">=7.4.0"
-  checksum: b9d678e8399359aa43c3ad46a828431eb4297cc75c395b71a1e474903be42828ffa7ffbc1a72c5e3b907d5b86e3b8c7893fb152180d30e1f18ec70ab9224066c
+  checksum: 7f286901cf87396785cc2d2e2b9f539c121fbf607589105d44459aa96fc17e40bc7ecd5aec59655799daea7f96ede4ad01ef6e92ba679a02e6824103c1023e50
   languageName: node
   linkType: hard
 
@@ -3548,12 +3548,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-antfu@npm:0.24.2":
-  version: 0.24.2
-  resolution: "eslint-plugin-antfu@npm:0.24.2"
+"eslint-plugin-antfu@npm:0.24.3":
+  version: 0.24.3
+  resolution: "eslint-plugin-antfu@npm:0.24.3"
   dependencies:
     "@typescript-eslint/utils": "npm:^5.26.0"
-  checksum: 3e8aeba35a59eadb95ec2a559f06e72af5ae991017ee49b7980c8a6740ac46365ab90d28940a7fa004d4deb9a0b777f0c519fe403d3b14ed6d59b7545459ec21
+  checksum: f549890bf7e717de79594d2cb3d75ef9c9e58e09e9f15141b2cba792c8b2798026ce5f68ab1c803e31e9f79eebedd0160bc529a1dc185b8d6b8735efcccd00cc
   languageName: node
   linkType: hard
 
@@ -6682,7 +6682,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "osu-graphql@workspace:."
   dependencies:
-    "@antfu/eslint-config": "npm:0.24.2"
+    "@antfu/eslint-config": "npm:0.24.3"
     "@commitlint/cli": "npm:17.0.1"
     "@commitlint/config-conventional": "npm:17.0.0"
     "@commitlint/types": "npm:17.0.0"
