@@ -6715,7 +6715,7 @@ __metadata:
     nodemon: "npm:2.0.16"
     reflect-metadata: "npm:0.1.13"
     rimraf: "npm:3.0.2"
-    ts-node: "npm:10.8.0"
+    ts-node: "npm:10.8.1"
     type-graphql: "npm:1.1.1"
     typescript: "npm:4.7.2"
     uuid: "npm:8.3.2"
@@ -7999,7 +7999,45 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-node@npm:10.8.0, ts-node@npm:^10.7.0":
+"ts-node@npm:10.8.1":
+  version: 10.8.1
+  resolution: "ts-node@npm:10.8.1"
+  dependencies:
+    "@cspotcode/source-map-support": "npm:^0.8.0"
+    "@tsconfig/node10": "npm:^1.0.7"
+    "@tsconfig/node12": "npm:^1.0.7"
+    "@tsconfig/node14": "npm:^1.0.0"
+    "@tsconfig/node16": "npm:^1.0.2"
+    acorn: "npm:^8.4.1"
+    acorn-walk: "npm:^8.1.1"
+    arg: "npm:^4.1.0"
+    create-require: "npm:^1.1.0"
+    diff: "npm:^4.0.1"
+    make-error: "npm:^1.1.1"
+    v8-compile-cache-lib: "npm:^3.0.1"
+    yn: "npm:3.1.1"
+  peerDependencies:
+    "@swc/core": ">=1.2.50"
+    "@swc/wasm": ">=1.2.50"
+    "@types/node": "*"
+    typescript: ">=2.7"
+  peerDependenciesMeta:
+    "@swc/core":
+      optional: true
+    "@swc/wasm":
+      optional: true
+  bin:
+    ts-node: dist/bin.js
+    ts-node-cwd: dist/bin-cwd.js
+    ts-node-esm: dist/bin-esm.js
+    ts-node-script: dist/bin-script.js
+    ts-node-transpile-only: dist/bin-transpile.js
+    ts-script: dist/bin-script-deprecated.js
+  checksum: b909e364640c9f87e04e08f19df33a37c2ea829eb60f4b158bcc2a3bf5569d47d713071d5a9becc3a65db493d03026ee2d3f4687f8c6f709bbb6f5e48599087f
+  languageName: node
+  linkType: hard
+
+"ts-node@npm:^10.7.0":
   version: 10.8.0
   resolution: "ts-node@npm:10.8.0"
   dependencies:
