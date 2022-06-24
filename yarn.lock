@@ -6446,9 +6446,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nodemon@npm:2.0.16":
-  version: 2.0.16
-  resolution: "nodemon@npm:2.0.16"
+"nodemon@npm:2.0.18":
+  version: 2.0.18
+  resolution: "nodemon@npm:2.0.18"
   dependencies:
     chokidar: "npm:^3.5.2"
     debug: "npm:^3.2.7"
@@ -6462,7 +6462,7 @@ __metadata:
     update-notifier: "npm:^5.1.0"
   bin:
     nodemon: bin/nodemon.js
-  checksum: 9f5bc74f34f862aee49c6cc17a90b72aa993a702c9ccadbd0e1f28da1d1184f0e678ea853fa97c1d87823d9a1a8e87c3b7af46ef4281c72416ee31823eb9c241
+  checksum: 128c85aeeaaac475b48674d4dbbd2ada571fa702a4d4e8c3bbc2d464e45bb779684a35452056a01e947bbbf57664e3c7ba52066172a3f8579be4a3acf0dc0e94
   languageName: node
   linkType: hard
 
@@ -6712,7 +6712,7 @@ __metadata:
     husky: "npm:8.0.1"
     jest: "npm:28.1.1"
     jsonwebtoken: "npm:8.5.1"
-    nodemon: "npm:2.0.16"
+    nodemon: "npm:2.0.18"
     reflect-metadata: "npm:0.1.13"
     rimraf: "npm:3.0.2"
     ts-node: "npm:10.8.0"
