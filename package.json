@@ -1,7 +1,7 @@
 {
   "name": "osu-graphql",
   "version": "1.0.0",
-  "packageManager": "yarn@4.0.0-rc.6",
+  "packageManager": "yarn@4.0.0-rc.9",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/server.ts",
