@@ -11,8 +11,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.25.2",
-    "@commitlint/cli": "17.0.2",
-    "@commitlint/config-conventional": "17.0.2",
+    "@commitlint/cli": "17.0.3",
+    "@commitlint/config-conventional": "17.0.3",
     "@commitlint/types": "17.0.0",
     "@types/compression": "1.7.2",
     "@types/express": "4.17.13",
