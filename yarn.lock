@@ -6718,7 +6718,7 @@ __metadata:
     nodemon: "npm:2.0.18"
     reflect-metadata: "npm:0.1.13"
     rimraf: "npm:3.0.2"
-    ts-node: "npm:10.8.1"
+    ts-node: "npm:10.8.2"
     type-graphql: "npm:1.1.1"
     typescript: "npm:4.7.4"
     uuid: "npm:8.3.2"
@@ -7991,9 +7991,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-node@npm:10.8.1":
-  version: 10.8.1
-  resolution: "ts-node@npm:10.8.1"
+"ts-node@npm:10.8.2":
+  version: 10.8.2
+  resolution: "ts-node@npm:10.8.2"
   dependencies:
     "@cspotcode/source-map-support": "npm:^0.8.0"
     "@tsconfig/node10": "npm:^1.0.7"
@@ -8025,7 +8025,7 @@ __metadata:
     ts-node-script: dist/bin-script.js
     ts-node-transpile-only: dist/bin-transpile.js
     ts-script: dist/bin-script-deprecated.js
-  checksum: b909e364640c9f87e04e08f19df33a37c2ea829eb60f4b158bcc2a3bf5569d47d713071d5a9becc3a65db493d03026ee2d3f4687f8c6f709bbb6f5e48599087f
+  checksum: 316e90bf1ba8ef768a13ae45d3db479dc84e03b6338fb56ed8a55688615ffd814cc9ee770e9402f6f0599423ac4fa8211cc70e523d969fc4cddd6ac83d35d85d
   languageName: node
   linkType: hard
 
