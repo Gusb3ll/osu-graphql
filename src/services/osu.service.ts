@@ -1,9 +1,14 @@
 import type { IncomingHttpHeaders } from 'http2'
-
 import { URLSearchParams } from 'url'
-import type { NextFunction, Request, Response } from 'express'
 import axios from 'axios'
-import type { osuUser } from '../interface/osuUser'
+
+import type { NextFunction, Request, Response } from 'express'
+import type { osuMinimalUser, osuUser } from '@interfaces/osuUser'
+
+interface osuTokensCollection {
+  access_token: string
+  refresh_token: string
+}
 
 function getHeaders(req: IncomingHttpHeaders) {
   return {
@@ -13,7 +18,7 @@ function getHeaders(req: IncomingHttpHeaders) {
   }
 }
 
-function getLoginUrl() {
+function getLoginUrl(): string {
   const params = new URLSearchParams()
   params.append('client_id', process.env.OSU_API_V2_CLIENTID!)
   params.append('redirect_uri', process.env.OSU_API_V2_CALLBACK_URL!)
@@ -23,7 +28,7 @@ function getLoginUrl() {
   return `https://osu.ppy.sh/oauth/authorize?${params}`
 }
 
-async function getUserToken(code: string, state: string) {
+async function getUserToken(code: string, state: string): Promise<osuTokensCollection> {
   const stated = JSON.parse(state)
   const params = new URLSearchParams()
   params.append('client_id', process.env.OSU_API_V2_CLIENTID!)
@@ -37,7 +42,7 @@ async function getUserToken(code: string, state: string) {
       'Content-Type': 'application/x-www-form-urlencoded',
     },
   }
-  const token = await axios
+  const token: osuTokensCollection = await axios
     .post('https://osu.ppy.sh/oauth/token', params, { headers: config.headers })
     .then(res => res.data)
     .catch((error) => { return error.response.data })
@@ -57,7 +62,7 @@ async function revokeUserToken() {
   return { message: 'Success' }
 }
 
-function getFlagURL(flag: string) {
+function getFlagURL(flag: string): string {
   let url = 'https://osu.ppy.sh/assets/images/flags/'
 
   for (let i = 0; i < flag.length; i++) {
@@ -67,7 +72,7 @@ function getFlagURL(flag: string) {
   return url
 }
 
-function minimalUser(user: osuUser) {
+function minimalUser(user: osuUser): osuMinimalUser {
   return {
     id: user.id,
     avatar: user.avatar_url,
@@ -79,7 +84,7 @@ function minimalUser(user: osuUser) {
   }
 }
 
-async function getUser(header: IncomingHttpHeaders) {
+async function getUser(header: IncomingHttpHeaders): Promise<osuMinimalUser> {
   const user = await axios.get('https://osu.ppy.sh/api/v2/me', getHeaders(header))
     .then(res => res.data)
     .catch((error) => {
@@ -92,7 +97,7 @@ async function getUser(header: IncomingHttpHeaders) {
   return minimalUser(user)
 }
 
-async function checkAccount(req: Request, res: Response, next: NextFunction) {
+async function checkAccount(req: Request, res: Response, next: NextFunction): Promise<any> {
   const user = await getUser(req.headers)
   if (!user)
     res.status(401).send({ error: 'Unauthorized' })
@@ -101,4 +106,10 @@ async function checkAccount(req: Request, res: Response, next: NextFunction) {
     next()
 }
 
-export default { getLoginUrl, getUserToken, revokeUserToken, getUser, checkAccount }
+export default {
+  getLoginUrl,
+  getUserToken,
+  revokeUserToken,
+  getUser,
+  checkAccount,
+}

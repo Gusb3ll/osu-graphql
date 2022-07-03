@@ -1,11 +1,10 @@
 import 'reflect-metadata'
-
-import { ApolloServer } from 'apollo-server-express'
 import { buildSchema } from 'type-graphql'
+import { ApolloServer } from 'apollo-server-express'
+
+import { osuResolver } from '@resolvers'
 
 import app from './app'
-
-import { osuResolver } from './resolvers/osu.resolver'
 
 (async () => {
   const apolloServer = new ApolloServer({

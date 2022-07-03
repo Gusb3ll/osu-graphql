@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),Object.defineProperty(exports,"osuService",{enumerable:!0,get:()=>_osuService.default});const _osuService=function(obj){return obj&&obj.__esModule?obj:{default:obj}}(require("./osu.service"))

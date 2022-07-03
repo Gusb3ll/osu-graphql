@@ -18,7 +18,7 @@ app.use(helmet({
   crossOriginEmbedderPolicy: !isDevelopment,
   contentSecurityPolicy: !isDevelopment,
 }))
-app.use(cors())
+app.use(cors({ origin: '*' }))
 
 app.get('/', (_req: Request, res: Response) => {
   try { res.status(200).json({ Status: 'Ok', created: Date.now().toString(), version: '1.0.0' }) }

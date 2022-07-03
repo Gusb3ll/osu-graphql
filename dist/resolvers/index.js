@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),Object.defineProperty(exports,"osuResolver",{enumerable:!0,get:()=>_osuResolver.default});const _osuResolver=function(obj){return obj&&obj.__esModule?obj:{default:obj}}(require("./osu.resolver"))

@@ -1,26 +1,25 @@
 import {
   Arg,
   Ctx,
-  Mutation,
   Query,
   Resolver,
 } from 'type-graphql'
 
+import { osuService } from '@services'
+
 import {
+  getStatusResponse,
   osuLoginUrlResponse,
   osuRevokeTokenResponse,
   osuTokenResponse,
   osuUserResponse,
-  statusResponse,
-} from '../types/osu.types'
+} from '@qltypes/osu.types'
 
-import type { ExpressContext } from '../interface/context'
-
-import osuService from '../services/osu.service'
+import type { ExpressContext } from '@interfaces/context'
 
 @Resolver()
-export class osuResolver {
-  @Query(() => statusResponse)
+export default class osuResolver {
+  @Query(() => getStatusResponse)
   getStatus() {
     try {
       return { message: 'Ok' }
@@ -40,40 +39,40 @@ export class osuResolver {
     }
   }
 
-  @Mutation(() => osuTokenResponse)
-  async getUserToken(@Arg('code') code: string, @Arg('state') state: string): Promise<osuTokenResponse> {
+  @Query(() => osuTokenResponse)
+  async getUserToken(@Arg('code', () => String) code: string, @Arg('state', () => String) state: string): Promise<osuTokenResponse | undefined> {
     try {
       const token = await osuService.getUserToken(code, state)
       if (!token)
-        return { message: 'Internal server error' }
-      return { message: 'Successful', access_token: token.access_token, refresh_token: token.refresh_token }
+        return { ok: false, message: 'Internal server error' }
+      return { ok: true, message: 'Successful', access_token: token.access_token, refresh_token: token.refresh_token }
     }
     catch (err) {
-      return { message: 'Internal server error' }
+      return { ok: false, message: 'Internal server error' }
     }
   }
 
-  @Mutation(() => osuUserResponse)
-  async getUser(@Ctx() { req }: ExpressContext): Promise<osuUserResponse> {
+  @Query(() => osuUserResponse)
+  async getUser(@Ctx() { req }: ExpressContext): Promise<osuUserResponse | undefined> {
     try {
       const user = await osuService.getUser(req.headers)
       if (!user)
-        return { message: 'Internal server error' }
-      return { message: 'Successful', user }
+        return { ok: false, message: 'Internal server error' }
+      return { ok: true, message: 'Successful', user }
     }
     catch (err) {
-      return { message: 'Internal server error' }
+      return { ok: false, message: 'Internal server error' }
     }
   }
 
-  @Mutation(() => osuRevokeTokenResponse)
-  async revokeUserToken(): Promise<osuRevokeTokenResponse> {
+  @Query(() => osuRevokeTokenResponse)
+  async revokeUserToken(): Promise<osuRevokeTokenResponse | undefined> {
     try {
       await osuService.revokeUserToken()
-      return { message: 'Successful' }
+      return { ok: true, message: 'Successful' }
     }
     catch (err) {
-      return { message: 'Internal server error' }
+      return { ok: false, message: 'Internal server error' }
     }
   }
 }

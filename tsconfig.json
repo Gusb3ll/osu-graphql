@@ -1,25 +1,31 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "module": "commonjs",
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
-    "declaration": true,
-    "removeComments": true,
-    "esModuleInterop": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
     "strict": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "ES2019",
-    "sourceMap": true,
-    "outDir": "./dist",
-    "baseUrl": "./",
-    "incremental": true,
+    "baseUrl": "src",
+    "outDir": "dist",
+    "target": "ESNext",
+    "moduleResolution": "node",
+    "lib": ["ESNext", "ESNext.AsyncIterable"],
     "skipLibCheck": true,
-    "strictNullChecks": false,
     "noImplicitAny": false,
-    "strictBindCallApply": false,
-    "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false,
-    "resolveJsonModule": true
-  }
+    "esModuleInterop": true,
+    "strictNullChecks": false,
+    "module": "CommonJS",
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "paths": {
+      "@interfaces/*": ["interfaces/*"],
+      "@middleware/*": ["middleware/*"],
+      "@resolvers/*": ["resolvers/*"],
+      "@services/*": ["services/*"],
+      "@qltypes/*": ["types/*"],
+      "@middleware": ["middleware/index.ts"],
+      "@resolvers": ["resolvers/index.ts"],
+      "@services": ["services/index.ts"]
+    }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
 }
