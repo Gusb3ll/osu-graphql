@@ -709,114 +709,114 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core-android-arm-eabi@npm:1.2.208":
-  version: 1.2.208
-  resolution: "@swc/core-android-arm-eabi@npm:1.2.208"
+"@swc/core-android-arm-eabi@npm:1.2.211":
+  version: 1.2.211
+  resolution: "@swc/core-android-arm-eabi@npm:1.2.211"
   conditions: os=android & cpu=arm
   languageName: node
   linkType: hard
 
-"@swc/core-android-arm64@npm:1.2.208":
-  version: 1.2.208
-  resolution: "@swc/core-android-arm64@npm:1.2.208"
+"@swc/core-android-arm64@npm:1.2.211":
+  version: 1.2.211
+  resolution: "@swc/core-android-arm64@npm:1.2.211"
   conditions: os=android & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-arm64@npm:1.2.208":
-  version: 1.2.208
-  resolution: "@swc/core-darwin-arm64@npm:1.2.208"
+"@swc/core-darwin-arm64@npm:1.2.211":
+  version: 1.2.211
+  resolution: "@swc/core-darwin-arm64@npm:1.2.211"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-x64@npm:1.2.208":
-  version: 1.2.208
-  resolution: "@swc/core-darwin-x64@npm:1.2.208"
+"@swc/core-darwin-x64@npm:1.2.211":
+  version: 1.2.211
+  resolution: "@swc/core-darwin-x64@npm:1.2.211"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core-freebsd-x64@npm:1.2.208":
-  version: 1.2.208
-  resolution: "@swc/core-freebsd-x64@npm:1.2.208"
+"@swc/core-freebsd-x64@npm:1.2.211":
+  version: 1.2.211
+  resolution: "@swc/core-freebsd-x64@npm:1.2.211"
   conditions: os=freebsd & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm-gnueabihf@npm:1.2.208":
-  version: 1.2.208
-  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.2.208"
+"@swc/core-linux-arm-gnueabihf@npm:1.2.211":
+  version: 1.2.211
+  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.2.211"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-gnu@npm:1.2.208":
-  version: 1.2.208
-  resolution: "@swc/core-linux-arm64-gnu@npm:1.2.208"
+"@swc/core-linux-arm64-gnu@npm:1.2.211":
+  version: 1.2.211
+  resolution: "@swc/core-linux-arm64-gnu@npm:1.2.211"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-musl@npm:1.2.208":
-  version: 1.2.208
-  resolution: "@swc/core-linux-arm64-musl@npm:1.2.208"
+"@swc/core-linux-arm64-musl@npm:1.2.211":
+  version: 1.2.211
+  resolution: "@swc/core-linux-arm64-musl@npm:1.2.211"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-gnu@npm:1.2.208":
-  version: 1.2.208
-  resolution: "@swc/core-linux-x64-gnu@npm:1.2.208"
+"@swc/core-linux-x64-gnu@npm:1.2.211":
+  version: 1.2.211
+  resolution: "@swc/core-linux-x64-gnu@npm:1.2.211"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-musl@npm:1.2.208":
-  version: 1.2.208
-  resolution: "@swc/core-linux-x64-musl@npm:1.2.208"
+"@swc/core-linux-x64-musl@npm:1.2.211":
+  version: 1.2.211
+  resolution: "@swc/core-linux-x64-musl@npm:1.2.211"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@swc/core-win32-arm64-msvc@npm:1.2.208":
-  version: 1.2.208
-  resolution: "@swc/core-win32-arm64-msvc@npm:1.2.208"
+"@swc/core-win32-arm64-msvc@npm:1.2.211":
+  version: 1.2.211
+  resolution: "@swc/core-win32-arm64-msvc@npm:1.2.211"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-win32-ia32-msvc@npm:1.2.208":
-  version: 1.2.208
-  resolution: "@swc/core-win32-ia32-msvc@npm:1.2.208"
+"@swc/core-win32-ia32-msvc@npm:1.2.211":
+  version: 1.2.211
+  resolution: "@swc/core-win32-ia32-msvc@npm:1.2.211"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
-"@swc/core-win32-x64-msvc@npm:1.2.208":
-  version: 1.2.208
-  resolution: "@swc/core-win32-x64-msvc@npm:1.2.208"
+"@swc/core-win32-x64-msvc@npm:1.2.211":
+  version: 1.2.211
+  resolution: "@swc/core-win32-x64-msvc@npm:1.2.211"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core@npm:^1.2.208":
-  version: 1.2.208
-  resolution: "@swc/core@npm:1.2.208"
+"@swc/core@npm:1.2.211":
+  version: 1.2.211
+  resolution: "@swc/core@npm:1.2.211"
   dependencies:
-    "@swc/core-android-arm-eabi": "npm:1.2.208"
-    "@swc/core-android-arm64": "npm:1.2.208"
-    "@swc/core-darwin-arm64": "npm:1.2.208"
-    "@swc/core-darwin-x64": "npm:1.2.208"
-    "@swc/core-freebsd-x64": "npm:1.2.208"
-    "@swc/core-linux-arm-gnueabihf": "npm:1.2.208"
-    "@swc/core-linux-arm64-gnu": "npm:1.2.208"
-    "@swc/core-linux-arm64-musl": "npm:1.2.208"
-    "@swc/core-linux-x64-gnu": "npm:1.2.208"
-    "@swc/core-linux-x64-musl": "npm:1.2.208"
-    "@swc/core-win32-arm64-msvc": "npm:1.2.208"
-    "@swc/core-win32-ia32-msvc": "npm:1.2.208"
-    "@swc/core-win32-x64-msvc": "npm:1.2.208"
+    "@swc/core-android-arm-eabi": "npm:1.2.211"
+    "@swc/core-android-arm64": "npm:1.2.211"
+    "@swc/core-darwin-arm64": "npm:1.2.211"
+    "@swc/core-darwin-x64": "npm:1.2.211"
+    "@swc/core-freebsd-x64": "npm:1.2.211"
+    "@swc/core-linux-arm-gnueabihf": "npm:1.2.211"
+    "@swc/core-linux-arm64-gnu": "npm:1.2.211"
+    "@swc/core-linux-arm64-musl": "npm:1.2.211"
+    "@swc/core-linux-x64-gnu": "npm:1.2.211"
+    "@swc/core-linux-x64-musl": "npm:1.2.211"
+    "@swc/core-win32-arm64-msvc": "npm:1.2.211"
+    "@swc/core-win32-ia32-msvc": "npm:1.2.211"
+    "@swc/core-win32-x64-msvc": "npm:1.2.211"
   dependenciesMeta:
     "@swc/core-android-arm-eabi":
       optional: true
@@ -846,7 +846,7 @@ __metadata:
       optional: true
   bin:
     swcx: run_swcx.js
-  checksum: 8aaf2205941564f3dc5df8f5d4171d5c53f5dc023521e0f67069a10317915bbe06c92c5502db5827f2fe1169592a9e0cfeacd7138391592f0831e9591030170a
+  checksum: 8b8b08848950ece4d0ae12c49ea64775c76f8262cb5b2f44f364b876eab7676eb1ad6e635d5a3e8879cbb74140cfa86fcb94648394639954610b921b854990d4
   languageName: node
   linkType: hard
 
@@ -5065,7 +5065,7 @@ __metadata:
     "@commitlint/config-conventional": "npm:17.0.3"
     "@commitlint/types": "npm:17.0.0"
     "@swc/cli": "npm:^0.1.57"
-    "@swc/core": "npm:^1.2.208"
+    "@swc/core": "npm:1.2.211"
     "@types/compression": "npm:1.7.2"
     "@types/express": "npm:4.17.13"
     "@types/graphql": "npm:14.5.0"
