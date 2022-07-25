@@ -1,7 +1,7 @@
 {
   "name": "osu-graphql",
   "version": "1.0.0",
-  "packageManager": "yarn@4.0.0-rc.11",
+  "packageManager": "yarn@4.0.0-rc.14",
   "license": "MIT",
   "scripts": {
     "dev": "concurrently \"yarn watch-compile\" \"yarn watch-dev\"",
